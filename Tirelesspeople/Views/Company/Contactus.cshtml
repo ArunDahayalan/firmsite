@@ -1,0 +1,146 @@
+﻿
+@section TitleSection
+{
+    Book || Home
+}
+@section MainSection
+{
+    @{
+        Html.RenderPartial("~/Views/Common/_Menu.cshtml");
+    }
+<div id="contact-us">
+    <div class="container">
+        <div class="row">
+            <div id="info" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                <div id="contact-header"><h3 class="bold">CONTACT US</h3></div>
+                <div class="regular" id="contact-message">
+                    We would love to hear from you.
+                </div>
+            </div>
+            <div id="contact-form" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <form action="/company/contact-us" method="post">
+                    <input name="__RequestVerificationToken" type="hidden" value="RYSC2Ow4SR5cTKfYBFFh7dGaW6_yKyH5vcrbIltSyRQ9-bTAykdaYtfA3r6xI0WO8z7hu8JUINbUlD2MdvUrGiluZcKNDDIxkfJoSAWqL0_oPw2ovxtNG76TvrfudowMUMdSFw2" />                        <div class="form-group">
+
+                        <label class="content" for="Name">Name*</label>
+                        <input class="form-control medium " id="Name" maxlength="50" name="Name" type="text" value="" />
+
+                    </div>
+                    <div class="form-group">
+
+                        <label class="content" for="Company_">Company*</label>
+                        <input class="form-control medium " id="Company" maxlength="100" name="Company" type="text" value="" />
+
+                    </div>
+                    <div class="form-group">
+
+                        <label class="content" for="EmailAddress">Email address*</label>
+                        <input class="form-control medium " id="EmailAddress" maxlength="50" name="Email" type="text" value="" />
+
+
+                    </div>
+                    <div class="form-group">
+
+                        <label class="content" for="Phone">Phone*</label>
+                        <input class="form-control medium " id="Phone" maxlength="50" name="Phone" type="text" value="" />
+
+                    </div>
+                    <div class="form-group">
+
+                        <label class="content" for="Info">Additional Information*</label>
+                        <textarea class="form-control medium " cols="20" id="Info" maxlength="10000" name="Info" rows="5"></textarea>
+
+                    </div>
+                    <button type="submit" class="btn  large-btn btn-default medium  pull-right">SUBMIT</button>
+                </form>
+            </div>
+
+            <div id="location-section" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                @*<div id="location-header" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4 class="bold">LOCATIONS</h4>
+                </div>*@
+               @*<div id="rdu" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="location-title">
+                        <h4 class="bold">Morrisville Office</h4>
+                    </div>
+                    <div class="location-info content">
+                        Company Headquarters<br />
+                        2501 Aerial Center Parkway<br />
+                        Suite 200<br />
+                        Morrisville, NC 27560<br />
+                        USA
+                    </div>
+                    <div class="location-contact-info content">
+                        <span class="label">Toll Free:</span> +1 888.936.8638<br />
+                        <span class="label">Phone:</span> +1 919.481.1974<br />
+                        <span class="label">Fax:</span> +1 919.573.0306<br />
+                        <span class="label">E-mail: </span><a href="mailto:info@syncfusion.com">info@syncfusion.com</a>
+                    </div>
+
+                </div>*@
+                <div id="chennai" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="location-title">
+                        <h4 class="bold">Chennai Office</h4>
+                    </div>
+                    <div class="location-info content">
+                        EYMARD Complex<br />
+                        AJ 217, 4th Avenue, Shanthi Colony<br />
+                        Anna Nagar<br />
+                        Chennai-40<br />
+                        India
+                    </div>
+                    <div class="location-info content">
+                        Karunaa Conclave<br />
+                        AD 45, 4th Avenue, Shanthi Colony<br />
+                        Anna Nagar<br />
+                        Chennai-40<br />
+                        India
+                    </div>
+                    <div class="location-contact-info content">
+                        <span class="label">Phone:</span> +91 44 26210413<br />
+                        <span class="label">E-mail:</span> <a href="mailto:info@syncfusion.com">info@syncfusion.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    @{
+        Html.RenderPartial("~/Views/Common/_Footer.cshtml");
+    }
+}
+@section StyleSection
+{
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/content-box.css">
+    <link rel="stylesheet" href="../css/image-box.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href='../css/components.css'>
+    <link rel="stylesheet" href='../css/flexslider.css'>
+    <link rel="stylesheet" href='../css/magnific-popup.css'>
+    <link rel="stylesheet" href='../css/contact-form.css'>
+    <link rel="stylesheet" href='../css/social.stream.css'>
+    <link rel="icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/skin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/css/contactus.css" rel="stylesheet" />
+}
+
+@section ScriptsSection {
+    <script type="text/javascript" src="~/scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="~/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../scripts/imagesloaded.min.js"></script>
+    <script type="text/javascript" src="../scripts/parallax.min.js"></script>
+    <script type="text/javascript" src='../scripts/jquery.flexslider-min.js'></script>
+    <script type="text/javascript" async src='../scripts/isotope.min.js'></script>
+    <script type="text/javascript" async src='../scripts/contact-form.js'></script>
+    <script type="text/javascript" async src='../scripts/jquery.progress-counter.js'></script>
+    <script type="text/javascript" async src='../scripts/jquery.tab-accordion.js'></script>
+    <script type="text/javascript" async src="../scripts/bootstrap.popover.min.js"></script>
+    <script type="text/javascript" async src="../scripts/jquery.magnific-popup.min.js"></script>
+    <script src='../scripts/social.stream.min.js'></script>
+    <script src='../scripts/jquery.slimscroll.min.js'></script>
+    <script type="text/javascript" src='../scripts/smooth.scroll.min.js'></script>
+    <script type="text/javascript" src="~/scripts/script.js"></script>
+}

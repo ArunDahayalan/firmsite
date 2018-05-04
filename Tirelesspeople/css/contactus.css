@@ -1,0 +1,16 @@
+﻿ .footer-parallax
+  {
+      position: relative;
+  }
+ #contact-us{
+    padding-top: 120px;
+    /*margin-bottom: 50px;*/
+ }
+ #contact-form{
+    border-right: 1px solid #999;
+    padding-right: 25px;
+ }
+.label {
+    color:#8c8c8c;
+    padding:initial;
+}

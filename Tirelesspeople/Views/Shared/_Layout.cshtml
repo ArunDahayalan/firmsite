@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@RenderSection("TitleSection", false)</title>
+    @*<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/scripts/modernizr-2.6.2.js"></script>*@
+    @RenderSection("StyleSection", false)
+</head>
+<body>
+        @RenderSection("MainSection", required: false)
+    @RenderSection("ScriptsSection", required: false)
+   
+</body>
+</html>
